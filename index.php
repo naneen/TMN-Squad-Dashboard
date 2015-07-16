@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <?php include 'js/volocityChart.php';?>
+    <?php include 'php/connectDB.php';?>
+
+    <script type="text/javascript">
+        window.onload =  function(){
+            volocityChart();
+        }
+    </script>
+
 </head>
 <body>
-	<?php
-		print "Hello World!!!";
-	?>
+
+    <div id="volocity"></div>
+
 </body>
 </html>
+
+
+
