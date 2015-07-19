@@ -1,0 +1,129 @@
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	margin: 0px 0px;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.dashboard {
+	margin: 0 auto;
+	/*background: #004756;*/
+	background: #004756;
+	width: 100%;
+	height: 100%;
+	white-space:nowrap;
+}
+
+.build {
+	background: #EC663C;
+	width: 100%;
+	height: 100%;
+	overflow:auto;
+}
+
+.deploy {
+	background: #9C4274;
+	width: 100%;
+	height: 100%;
+	overflow:auto;
+}
+
+.test {
+	background: #12B0C5;
+	width: 100%;
+	height: 100%;
+	overflow:auto;
+}
+
+.test-chart {
+	background: #585858; /*#B97A57;*/
+	width: 100%;
+	height: 100%;
+}
+
+.build-gauge {
+	background: #33FF00;
+	width: 100%;
+	height: 100%;
+	overflow:none;
+}
+
+.inliner {
+	height: 100%;
+	margin-left: -1em;
+}
+
+.inliner,.inliner + * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	font-size: 44px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 1.0);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.content {
+	width: 100%;
+	/*position: absolute;*/
+	line-height: 100%;
+}
+
+.build-content1 {
+	text-align: center;
+	font-size: 260px;
+	font-weight: 700;
+	color:#000;
+	/*margin-top: 200px;*/
+}
+
+.build-content2 {
+	font-size: 15px;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.pass {
+	background: #063;
+}
+.fail {
+	background: #C33;
+}
+.warning {
+	background: #FC3;
+}
+.defaultText {
+	color: rgba(255, 255, 255, 1.0);
+}
+.passText {
+	color: rgba(0, 255, 0, 1.0);
+}
+.failText {
+	color: rgba(255, 0, 0, 1.0);
+}
+.warningText {
+	color: rgba(255, 255, 0, 1.0);
+}
+.no-resize .gs-resize-handle-both{
+   display:none;
+}
