@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/jquery.min.map"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/dark-unica.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/volocityChart.js"></script>
+
+    <script type="text/javascript">
+        function autoRefresh(){
+            $.ajax({
+                success: function() {
+                    if(getCorrectTime() == "00:00:00"){
+
+                    }
+                    volocityChart(<?php echo $_POST['SQUAD_ID']?>);
+              }
+            });
+        }
+        setInterval(autoRefresh,1000);
+
+        window.onload =  function(){
+            volocityChart();
+            autoRefresh();
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id="volocity"></div>
+
+</body>
+</html>
+
+
+
