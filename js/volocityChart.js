@@ -1,9 +1,9 @@
-var json_old = 0;
+$json_old = 0;
 function volocityChart(SQUAD_ID){
     $.getJSON(
         'php/QueryVolocity.php',{'SQUAD_ID':SQUAD_ID},function(json) {
-            if(json_old != JSON.stringify(json)){
-                json_old = JSON.stringify(json);
+            if($json_old != JSON.stringify(json)){
+                $json_old = JSON.stringify(json);
                 $('#volocity').highcharts({
                 chart: {
                     type: 'column'

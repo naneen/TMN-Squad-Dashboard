@@ -1,16 +1,15 @@
-
 <?php
 	include 'connectDB.php';
 	$sql = "SELECT *
 			FROM (
 				SELECT *
 				FROM TEST_VOLOCITY
-				WHERE SQUAD_ID = ".$_GET['SQUAD_ID']."
+				WHERE SQUAD_ID = 1
 				ORDER BY SPRINT_NO DESC
 				LIMIT 0,6
 				) as TEST_VOLOCITY1
 			order by SPRINT_NO;";
-	$result = $conn->query($sql);
+	$result = $con->query($sql);
 	$userJson1 = array();
 	$userJson2 = array();
 	$userJson3 = array();

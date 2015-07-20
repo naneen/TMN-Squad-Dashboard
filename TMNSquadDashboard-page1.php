@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sprint-dashboard.css" rel="stylesheet">
+
+    <!-- jQuery -->
     <script src="js/jquery.min.map"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <script src="js/jquery-redirect.js"></script>
+
+    <script>
+        $oldResult = "";
+        function sendTeamId(id) {
+            $SQUAD_ID = id;
+            $.redirect('TMNSquadDashboard-page2.php', {'SQUAD_ID': $SQUAD_ID});
+        }
+        function callGetTeamAjax() {
+            $.ajax({url: "php/getTeam.php", success: function(result){
+                if($oldResult != result){
+                    $oldResult = result;
+                    $(".container").html(result);
+                }
+            }});
+        }
+        setInterval(callGetTeamAjax, 1000);
+        $( document ).ready(function() {
+            // print team when document ready
+            callGetTeamAjax();
+        });
+    </script>
 
 </head>
 <body>
 
-	<form action="TMNSquadDashboard-page2.php" method="POST">
-	    <button name="SQUAD_ID" value="1" ><font size="1000%">1</font></button><br>
-	    <button name="SQUAD_ID" value="2" ><font size="1000%">2</font></button><br>
-	    <button name="SQUAD_ID" value="3" ><font size="1000%">3</font></button><br>
-	    <button name="SQUAD_ID" value="4" ><font size="1000%">4</font></button><br>
-	   	<button name="SQUAD_ID" value="5" ><font size="1000%">5</font></button><br>
-	    <button name="SQUAD_ID" value="6" ><font size="1000%">6</font></button><br>
-	    <button name="SQUAD_ID" value="7" ><font size="1000%">7</font></button><br>
-	    <button name="SQUAD_ID" value="8" ><font size="1000%">8</font></button><br>
-	</form>
+    <div class="col-lg-12 dashboard-title">
+        <h2 class="">Sprint Dashboard</h2>
+    </div>
+	<div class="container">
+		<div class="row">
+
+        <!-- print teams here -->
+
+        </div>
+    </div> <!-- /.container -->
+    <div class="test"></div>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
