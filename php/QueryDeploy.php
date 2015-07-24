@@ -57,7 +57,9 @@ $countDate=count($dateLoop)-1;
 $countProj=count($projName)-1;
 
     $sql2 = "SELECT date(a.DeploymentDate) as date,time(a.DeploymentDate) as time1 ,time(a.EndDeploymentDate) as time2,
-    			TimeDiff(a.EndDeploymentDate,a.DeploymentDate) as timediff , d.ProjectName
+    				CONCAT(
+   					MOD(HOUR(TIMEDIFF(a.EndDeploymentDate,a.DeploymentDate)), 24),'.', 
+   					MINUTE(TIMEDIFF(a.EndDeploymentDate,a.DeploymentDate))) as timediff , d.ProjectName
 				from TEST_DEPLOYMENT a , buildresult b , mapindexparent c ,projectindex d,TEST_PROJECT_PARENT e where date(a.DeploymentDate) > SYSDATE() - INTERVAL 8 DAY 
 				and a.DeploymentDate < SYSDATE() and a.EndDeploymentDate < SYSDATE() 
 				and e.SQUAD_ID=".$_GET['SQUAD_ID']."
@@ -69,7 +71,7 @@ $countProj=count($projName)-1;
 	while($row = $result2->fetch_assoc()) {
 		$sort[0]=$row["time1"];
 		$sort[1]=$row["time2"];
-		$sort[2]=(int)$row["timediff"];
+		$sort[2]=(double)$row["timediff"];
 		$sort[3]=$row["ProjectName"];
 		$sort[4]=$row["date"];
 		if($sort[3]==$projName[$i]&&$sort[4]==$dateLoop[0]){
