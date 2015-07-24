@@ -1,7 +1,7 @@
 <?php include 'php/connectdefect.php';?>
 
 <script>
-     $(function defectChart() {
+    function defectChart() {
 
     // Create the chart
     $('#defect').highcharts({
@@ -27,7 +27,7 @@
         },
         xAxis: {
              title: {
-                text: 'Sprint',
+                text: 'SPRINT',
                  margin: 0,
                 style:{color: '#D2D7D3'},
 
@@ -82,6 +82,11 @@
               }
            },
         plotOptions: {
+            column: {
+                dataLabels: {
+                    enabled: true
+                }
+            },
             series: {
                 dataLabels: {
                      color: '#B0B0B3'
@@ -116,8 +121,7 @@
          color: '#F0F0F0'
              },
              formatter: function () {
-                return 'This sprint' +
-                    ' have ' + this.y + ' defects.';
+                return this.y + ' defects';
             }
         },
 
@@ -126,6 +130,6 @@
         }],
 
     });
-});
+}
 
         </script>

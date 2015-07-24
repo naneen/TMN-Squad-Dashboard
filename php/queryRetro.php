@@ -17,10 +17,6 @@
     $retorJson['POSITIVE'] = (int)$row["POSITIVE"];
     $retorJson['NEUTRAL'] = (int)$row["NEUTRAL"];
     $retorJson['STRESSFUL'] = (int)$row["STRESSFUL"];
-    // $sprintNO = 7;
-    // $retorJson['POSITIVE'] = 3;
-    // $retorJson['NEUTRAL'] = 3;
-    // $retorJson['STRESSFUL'] = 3;
 
     $sql2 = "SELECT *
 			 FROM TEST_RETRO_CARD
@@ -29,25 +25,16 @@
 
 	$cards = $con->query($sql2);
 
-	// $retorJson['CARDS'] = $cards;
 	$contents = array();
 	$actions = array();
-
 	$owner = array();
+
 	while($row = $cards->fetch_assoc()) {
 	    array_push($contents, $row["PANEL_CONTENT"]);
     	array_push($actions, $row["ACTION_ITEM"]);
     	array_push($owner, $row["OWNER"]);
     }
 
-
-    // $retorJson['CONTENT'] = implode(" ",$contents);
-
-    // $retorJson['PANEL_CONTENT'] = json_encode($contents);
-    // $retorJson['ACTION_ITEM'] = json_encode($actions);
-    // $retorJson['OWNER'] = json_encode($owner);
-    // 
-    // 
     $retorJson['PANEL_CONTENT'] = $contents;
     $retorJson['ACTION_ITEM'] = $actions;
     $retorJson['OWNER'] = $owner;

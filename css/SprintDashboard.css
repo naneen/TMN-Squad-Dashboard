@@ -32,7 +32,7 @@ body{
   border-radius: 0px;
 }
 
-/**************** volocity ******************/
+/**************** valocity ******************/
 #volocity{
   position: relative;
   width: 100%;
@@ -40,13 +40,11 @@ body{
 }
 
 /**************** retro ******************/
-#retro{
-  /*background-color: #35353f;*/
-}
 
-#retro .text-warning{
+#retro .text{
   font-size: 21px;
   margin: 0 0 1% 0;
+  text-align: center;
 }
 
 .feeling{
@@ -87,9 +85,12 @@ body{
   margin: 0% 1% 0% 0%;
   width: 24.25%;
   height: 100%;
-  color: #5ce2ed;
   padding: 1% 0% 0% 1%;
   border-radius: 0px;
+}
+
+#retro .main{
+  color: #5ce2ed;
 }
 
 .retroTopic{

@@ -21,7 +21,7 @@
                     if(getCorrectTime() == "00:00:00"){
                         $("#year").html(getYear());
                         DeployChart($SQUAD_ID);
-                        defectChart($SQUAD_ID);
+                        defectChart();
                     }
                     volocityChart($SQUAD_ID);
                     CoverageChart($SQUAD_ID);
@@ -37,7 +37,7 @@
             volocityChart($SQUAD_ID);
             DeployChart($SQUAD_ID);
             CoverageChart($SQUAD_ID);
-            defectChart($SQUAD_ID);
+            defectChart();
             autoRefresh();
         }
     </script>
@@ -74,12 +74,12 @@
             </div>
 
             <div id="" class="well bottom">
-              Look, I'm in a well!
+              CI/CD
             </div>
 
             <!-- ------------ retro ------------ -->
             <div id="retro" class="well bottom">
-                <p class="text-warning">Retrospective</p>
+                <p class="text">Retrospective</p>
                 <div id="positive" class="feeling">
                     <p>Positive</p>
                 </div>
