@@ -3,11 +3,11 @@
 	$sql = "SELECT *
 			FROM (
 				SELECT *
-				FROM TEST_VOLOCITY
+				FROM TEST_VALOCITY
 				WHERE SQUAD_ID = ".$_GET['SQUAD_ID']."
 				ORDER BY SPRINT_NO DESC
 				LIMIT 0,6
-				) as TEST_VOLOCITY1
+				) as TEST_VALOCITY1
 			order by SPRINT_NO;";
 	$result = $con->query($sql);
 	$userJson1 = array();

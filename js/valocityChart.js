@@ -1,15 +1,16 @@
 var json_old = 0;
-function volocityChart(SQUAD_ID){
+function valocityChart(SQUAD_ID){
     $.getJSON(
-        'php/QueryVolocity.php',{'SQUAD_ID':SQUAD_ID},function(json) {
+        'php/QueryValocity.php',{'SQUAD_ID':SQUAD_ID},function(json) {
             if(json_old != JSON.stringify(json)){
                 json_old = JSON.stringify(json);
-                $('#volocity').highcharts({
+                $('#valocity').highcharts({
+                colors: ['#FC751B', '#1abc9c'],
                 chart: {
                     type: 'column'
                 },
                 title: {
-                    text: 'Sprint Dashboard<br>Volocity commit / complete'
+                    text: 'Sprint Dashboard<br>Valocity commit / complete'
                 },
                 xAxis: {
                     title:{

@@ -6,7 +6,7 @@
     <script src="js/exporting.js"></script>
     <script src="js/dark-unica.js"></script>
     <script src="js/time.js"></script>
-    <script src="js/volocityChart.js"></script>
+    <script src="js/valocityChart.js"></script>
     <script src="js/retro.js"></script>
     <script src="js/DeployChart.js"></script>
     <script src="js/CoverageChart.js"></script>
@@ -23,7 +23,7 @@
                         DeployChart($SQUAD_ID);
                         defectChart();
                     }
-                    volocityChart($SQUAD_ID);
+                    valocityChart($SQUAD_ID);
                     CoverageChart($SQUAD_ID);
                     retrospective($SQUAD_ID);
               }
@@ -34,7 +34,7 @@
         window.onload =  function(){
             $("#year").html(getYear());
             retrospective($SQUAD_ID);
-            volocityChart($SQUAD_ID);
+            valocityChart($SQUAD_ID);
             DeployChart($SQUAD_ID);
             CoverageChart($SQUAD_ID);
             defectChart();
@@ -54,7 +54,7 @@
 
         <div id="allContents">
             <div id="" class="well top">
-              <div id="volocity"></div>
+              <div id="valocity"></div>
             </div>
 
             <div id="" class="well top">
