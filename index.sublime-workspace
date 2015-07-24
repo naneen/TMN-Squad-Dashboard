@@ -1,0 +1,760 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"S",
+				"SQUAD_ID"
+			],
+			[
+				"sq",
+				"squad_name"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"g",
+				"getjson	$.getjson()"
+			],
+			[
+				"jso",
+				"json"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"DE",
+				"DEFECT_NO"
+			],
+			[
+				"SP",
+				"SPRINT_NO"
+			],
+			[
+				"Sp",
+				"SPRINT_NO"
+			],
+			[
+				"le",
+				"left	(getTeam.php)"
+			],
+			[
+				"resu",
+				"result"
+			],
+			[
+				"result",
+				"result_old"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"hi",
+				"highcharts"
+			],
+			[
+				"as",
+				"assets	(menu.php)"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"vol",
+				"volocityChart"
+			],
+			[
+				"va",
+				"value	Attr"
+			],
+			[
+				"me",
+				"method	Attr"
+			],
+			[
+				"hr",
+				"href	Attr"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"json",
+				"jQuery.parseJSON	jQuery.parseJSON"
+			],
+			[
+				"json_c",
+				"json_encode"
+			],
+			[
+				"che",
+				"checkValue"
+			],
+			[
+				"chec",
+				"checkValue($ans"
+			],
+			[
+				"vo",
+				"volocityChart"
+			],
+			[
+				"get",
+				"getSeconds"
+			],
+			[
+				"POINT_",
+				"POINT_COMMIT"
+			],
+			[
+				"De",
+				"DeploymentResultDao	(DeploymentResultDao.php)"
+			],
+			[
+				"on",
+				"onload	(index.php)"
+			],
+			[
+				"test",
+				"testjson	(index.php)"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"incl",
+				"include	(index.php)"
+			],
+			[
+				"POINT_C",
+				"POINT_COMPLETE	(connectDB.php)"
+			],
+			[
+				"P",
+				"POINT_COMMIT	(connectDB.php)"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"PO",
+				"POINT_COMMIT"
+			],
+			[
+				"user",
+				"userJson1"
+			],
+			[
+				"CO",
+				"COMMIT"
+			],
+			[
+				"us",
+				"userJson1"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"POINT",
+				"POINT_COMMIT"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"arra",
+				"array	(tesphp.php)"
+			],
+			[
+				"cit",
+				"city"
+			],
+			[
+				"for",
+				"formvars"
+			],
+			[
+				"db",
+				"dbport"
+			],
+			[
+				"ht",
+				"html	(index.php)"
+			],
+			[
+				"fon",
+				"fontSize"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "TMNSquadDashboard-page1.php",
+			"settings":
+			{
+				"buffer_size": 1556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.sublime-project",
+			"settings":
+			{
+				"buffer_size": 203,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/index.sublime-project",
+		"/Applications/MAMP/htdocs/Archive/TMNSquadDashboard-page2.php",
+		"/Applications/MAMP/htdocs/Archive/TMNSquadDashboard-page1.php",
+		"/Applications/MAMP/htdocs/Integrate/Archive/TMNSquadDashboard-page1.php",
+		"/Applications/MAMP/htdocs/Archive/css/SprintDashboard.css",
+		"/Applications/MAMP/htdocs/Archive/php/queryRetro.php",
+		"/Applications/MAMP/htdocs/Archive/js/retro.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/TMNSquadDashboard-page2.php",
+		"/Applications/MAMP/htdocs/Archive/index.sublime-project",
+		"/Applications/MAMP/htdocs/Integrate/Archive/index.sublime-project",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/volocityChart.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/highcharts.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/dark-unica.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/php/QueryVolocity.php",
+		"/Applications/MAMP/htdocs/Integrate/Archive/php/QuerySquadName.php",
+		"/Applications/MAMP/htdocs/Integrate/Archive/php/QueryCoverage.php",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/CoverageChart.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/time.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/js/DeployChart.js",
+		"/Applications/MAMP/htdocs/Integrate/Archive/php/defectchart.php",
+		"/Users/James/Desktop/install.ini",
+		"/Users/James/Downloads/install.ini",
+		"/Users/James/Desktop/Project/update.py",
+		"/Users/James/Desktop/Project/update-caller.py",
+		"/Users/James/Desktop/puppet/modules/ers-webreport/files/pbibpdev01/install.ini",
+		"/Users/James/Desktop/Project/src/main/java/com/springapp/mvc/controller/KioskController.java",
+		"/Users/James/Desktop/puppet/modules/prepaid-card-service/files/pbia-tstl-sbxfe04/install.ini",
+		"/Users/James/Desktop/puppet/modules/prepaid-card-service/manifests/init.pp",
+		"/Users/James/Desktop/1111/update.py",
+		"/Users/James/Desktop/update.py",
+		"/Users/James/Desktop/update-caller.py",
+		"/Users/James/Desktop/1111/update-caller.py",
+		"/Users/James/Desktop/war.spec",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/volocityChart.js",
+		"/Applications/MAMP/htdocs/old/js/defectchart.php",
+		"/Applications/MAMP/htdocs/old/FirstPage.php",
+		"/Applications/MAMP/htdocs/old/php/connectdefect.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/QueryVolocity.php",
+		"/Applications/MAMP/htdocs/old/js/highcharts.js",
+		"/Applications/MAMP/htdocs/old/page1.html",
+		"/Applications/MAMP/htdocs/old/index.sublime-project",
+		"/Applications/MAMP/htdocs/index.sublime-workspace",
+		"/Users/James/Desktop/projectEX/old/FirstPage.php",
+		"/Applications/MAMP/htdocs/savecode/php/connectDB.php",
+		"/Applications/MAMP/htdocs/savecode/TMNSquadDashboard-page1.php",
+		"/Applications/MAMP/htdocs/savecode/php/database-close.php",
+		"/Applications/MAMP/htdocs/savecode/php/support-function.php",
+		"/Applications/MAMP/htdocs/savecode/php/getTeam.php",
+		"/Applications/MAMP/htdocs/savecode/TMNSquadDashboard-page2.php",
+		"/Applications/MAMP/htdocs/savecode/js/volocityChart.js",
+		"/Applications/MAMP/htdocs/savecode/page2.php",
+		"/Applications/MAMP/htdocs/savecode/page1.php",
+		"/Applications/MAMP/htdocs/savecode/php/QueryVolocity.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/views/TMNSquadDashboard-page2.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/views/TMNSquadDashboard/php/getTeam.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/views/TMNSquadDashboard-page1.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/views/page1.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/views/TMNSquadDashboard/php/QueryVolocity.php",
+		"/Applications/MAMP/htdocs/sprint-dashboard/index.php",
+		"/Applications/MAMP/htdocs/projectEX/views/TMNSquadDashboard/php/QueryVolocity.php",
+		"/Applications/MAMP/htdocs/projectEX/views/TMNSquadDashboard/js/volocityChart.js",
+		"/Applications/MAMP/htdocs/projectEX/index.php",
+		"/Applications/MAMP/htdocs/projectEX/index.sublime-project",
+		"/Applications/MAMP/htdocs/projectEX/menu.php",
+		"/Applications/MAMP/htdocs/projectEX/views/page2.php",
+		"/Applications/MAMP/htdocs/projectEX/views/TMNSquadDashboard/php/connectDB.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/page1.php",
+		"/Applications/MAMP/htdocs/projectEX/core/util/test.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/connectDB.php",
+		"/Applications/MAMP/htdocs/projectEX/views/page1.php",
+		"/Applications/MAMP/htdocs/projectEX/core/util/dbconnect.php",
+		"/Applications/MAMP/htdocs/projectEX/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/ProjectSquad/page2.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/css/style.css",
+		"/Applications/MAMP/htdocs/test/test.php.js",
+		"/Applications/MAMP/htdocs/test/page1.html",
+		"/Applications/MAMP/htdocs/test/page2.html",
+		"/Applications/MAMP/htdocs/test/index.sublime-project",
+		"/Applications/MAMP/htdocs/test/page2.php",
+		"/Applications/MAMP/htdocs/test/page1.php",
+		"/Applications/MAMP/htdocs/test/test.sublime-project",
+		"/Users/James/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/James/Desktop/htdocs",
+		"/Applications/MAMP/htdocs/ProjectSquad/index.html",
+		"/Applications/MAMP/htdocs/ProjectSquad/index.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/exporting.js",
+		"/Applications/MAMP/htdocs/demo/index.html",
+		"/Applications/MAMP/htdocs/demo/js/ajax.js",
+		"/Applications/MAMP/htdocs/demo/php/ajax-follow.php",
+		"/Applications/MAMP/htdocs/demo/php/ajax-followers.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/volocityChart.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/time.js",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/getCorrectTime.php",
+		"/Applications/MAMP/htdocs/ExampleAjax/echo_param.php",
+		"/Applications/MAMP/htdocs/ExampleAjax/ajax.js",
+		"/Applications/MAMP/htdocs/projectEX/views/testanalystdashboard-ajax/dbconnect.php",
+		"/Applications/MAMP/htdocs/projectEX/views/sexydashboard-ajax/dbconnect.php",
+		"/Applications/MAMP/htdocs/ExampleJson/index.php",
+		"/Applications/MAMP/htdocs/ExampleJson/jsonjson.js",
+		"/Applications/MAMP/htdocs/ExampleJson/echo_json.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/index2.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/aaa.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/build.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/dbconnect.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/util/PropertiesConfig.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/deploy.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/qualityreport/core/dao/james.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/dao/ReportDao.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/dao/DeploymentResultDao.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/util/dbconnect.php",
+		"/Applications/MAMP/htdocs/qualityreport/core/util/james.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/james.php",
+		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard.php",
+		"/Users/James/Desktop/test.php",
+		"/Applications/MAMP/htdocs/gitRepo/qualityreport/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/DashboardEX/core/util/PropertiesConfig.php",
+		"/Applications/MAMP/htdocs/DashboardEX/core/util/dbconnect.php",
+		"/Applications/MAMP/htdocs/DashboardEX/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/dark-unica.js",
+		"/Users/James/Desktop/test.html",
+		"/Applications/MAMP/htdocs/ExampleAjax/index.php",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Applications/MAMP/htdocs/php/connectDB.php",
+		"/Applications/MAMP/htdocs/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/test.php",
+		"/Applications/MAMP/htdocs/tesphp.php",
+		"/Applications/MAMP/htdocs/js/volocityChart.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"color",
+			"_POST",
+			"legendTx",
+			"appname",
+			"tooltip",
+			"\".+$_POST['SQUAD_ID']+.\"",
+			"SQUAD_ID =  1",
+			"SQUAD_ID = 1",
+			"json",
+			"font",
+			"getDeploybyBuild",
+			"DeploymentResultDao",
+			"DeploymentResultDao.php",
+			"conn",
+			"folder",
+			"forder",
+			"highchart",
+			"follow",
+			"ajax",
+			"fontsize",
+			"datalab",
+			"datalable",
+			"container"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\".$_POST['SQUAD_ID'].\"",
+			"SQUAD_ID = \".+$_POST['SQUAD_ID']+.\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "TMNSquadDashboard-page1.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

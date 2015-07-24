@@ -1,9 +1,9 @@
-$json_old = 0;
+var json_old = 0;
 function volocityChart(SQUAD_ID){
     $.getJSON(
         'php/QueryVolocity.php',{'SQUAD_ID':SQUAD_ID},function(json) {
-            if($json_old != JSON.stringify(json)){
-                $json_old = JSON.stringify(json);
+            if(json_old != JSON.stringify(json)){
+                json_old = JSON.stringify(json);
                 $('#volocity').highcharts({
                 chart: {
                     type: 'column'
@@ -31,10 +31,11 @@ function volocityChart(SQUAD_ID){
                     }
                 },
                 legend: {
+                    enabled:true,
                     align: 'right',
-                    x: -30,
+                    x: 0,
                     verticalAlign: 'top',
-                    y: 25,
+                    y: 45,
                     floating: true,
                     backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
                     borderColor: '#CCC',
@@ -49,10 +50,7 @@ function volocityChart(SQUAD_ID){
                 plotOptions: {
                     column: {
                         dataLabels: {
-                            enabled: true,
-                            style: {
-                                fontSize: '200%'
-                            }
+                            enabled: true
                         }
                     }
                 },

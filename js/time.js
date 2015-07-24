@@ -9,3 +9,9 @@ function getCorrectTime(){
     time += ((seconds<10)? ("0" + seconds):seconds);
     return time;
 }
+
+function getYear(){
+    var date = new Date();
+    var year = date.getFullYear();
+    return year;
+}

@@ -19,5 +19,5 @@
     }
 
     # close database
-    include 'services/database-close.php'
+    include 'database-close.php'
 ?>
