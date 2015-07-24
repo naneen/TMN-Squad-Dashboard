@@ -68,10 +68,25 @@ function DeployChart(SQUAD_ID){
                         textShadow: '0 0 0px contrast'   
                     },
                     x:3,
-                    y:-25,
+                    y:-50,
                     rotation: -90,
                     formatter: function () {
-                        return this.total + " Hours ";       
+                        var digits=[];
+                        var output = "";
+                        var num=this.total;
+                        digits = (""+num).split(".");
+                        if(digits[0]==0&&digits.length>1){
+                                output=digits[1]+" MINUTEs";
+
+                        }
+                        if(digits[0]!=0&&digits.length>1){
+                                output=digits[0]+" hours  "+digits[1]+" MINUTEs";
+
+                        }
+                        if(digits[0]!=0&&digits.length==1){
+                         output=this.total+" hours"; 
+                        }
+                        return  output;       
                     } 
                 }
             },
@@ -87,8 +102,23 @@ function DeployChart(SQUAD_ID){
             },
             tooltip: {
                 formatter: function () {
+                     var digits=[];
+                        var output = "";
+                        var num=this.y;
+                        digits = (""+num).split(".");
+                        if(digits[0]==0&&digits.length>1){
+                                output=digits[1]+" MINUTEs";
+
+                        }
+                        if(digits[0]!=0&&digits.length>1){
+                                output=digits[0]+" hours  "+digits[1]+" MINUTEs";
+
+                        }
+                        if(digits[0]!=0&&digits.length==1){
+                         output=this.total+" hours"; 
+                        }
                     return '<b>' + this.x + '</b>  '+this.point.name+'<br/>' +
-                    this.series.name + ' : ' + this.y +" Hours";
+                    this.series.name + ' : ' + output ;
                 }
             },
             plotOptions: {
