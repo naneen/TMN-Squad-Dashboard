@@ -23,7 +23,7 @@ function DeployChart(SQUAD_ID){
         };
         if(json.name.length==0){
             var series = [];
-            var subtext= " No Deployment ";
+            var subtext= "";
             legendTx=false;
             series.push({});
         };

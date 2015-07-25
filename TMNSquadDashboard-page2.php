@@ -10,7 +10,7 @@
         <script src="js/retro.js"></script>
         <script src="js/DeployChart.js"></script>
         <script src="js/CoverageChart.js"></script>
-        <?php include 'php/defectchart.php'; ?>
+        <script src="js/defectchart.js"></script>
         <?php include 'php/QuerySquadName.php'; ?>
 
         <script type="text/javascript">
@@ -21,11 +21,11 @@
                         if(getCorrectTime() == "00:00:00"){
                             $("#year").html(getYear());
                             DeployChart($SQUAD_ID);
-                            defectChart();
                         }
                         valocityChart($SQUAD_ID);
                         CoverageChart($SQUAD_ID);
                         retrospective($SQUAD_ID);
+                        defectChart($SQUAD_ID);
                   }
                 });
             }
@@ -37,7 +37,7 @@
                 valocityChart($SQUAD_ID);
                 DeployChart($SQUAD_ID);
                 CoverageChart($SQUAD_ID);
-                defectChart();
+                defectChart($SQUAD_ID);
                 autoRefresh();
             }
         </script>

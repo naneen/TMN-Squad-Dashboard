@@ -1,16 +1,15 @@
-var json_old_valo = 0;
-function valocityChart(SQUAD_ID){
+var json_old_def = 0;
+function defectChart(SQUAD_ID){
     $.getJSON(
-        'php/QueryValocity.php',{'SQUAD_ID':SQUAD_ID},function(json) {
-            if(json_old_valo != JSON.stringify(json)){
-                json_old_valo = JSON.stringify(json);
-                $('#valocity').highcharts({
-                colors: ['#FC751B', '#1abc9c'],
+        'php/connectdefect.php',{'SQUAD_ID':SQUAD_ID},function(json) {
+            if(json_old_def != JSON.stringify(json)){
+                json_old_def = JSON.stringify(json);
+                $('#defect').highcharts({
                 chart: {
                     type: 'column'
                 },
                 title: {
-                    text: 'Sprint Dashboard<br>Valocity commit / complete'
+                    text: 'Defects of TEST Squad'
                 },
                 xAxis: {
                     title:{
@@ -21,7 +20,7 @@ function valocityChart(SQUAD_ID){
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'POINT'
+                        text: 'TOTAL DEFECTS ( NNUMBER OF ERROR )'
                     },
                     stackLabels: {
                         enabled: true,
@@ -46,7 +45,7 @@ function valocityChart(SQUAD_ID){
                 tooltip: {
                     shared : true,
                     formatter: function () {
-                        return 'spring : '+ this.x + '<br>' + this.series.name + ' : ' + this.y;
+                        return 'DEFECT : ' + this.y;
                     }
                 },
                 plotOptions: {
@@ -57,12 +56,11 @@ function valocityChart(SQUAD_ID){
                         }
                     }
                 },
+                legend: {
+                    enabled:false
+                },
                 series: [{
-                    name: 'COMMIT',
-                    data: json.POINT_COMMIT
-                },{
-                    name: 'COMPLETE',
-                    data: json.POINT_COMPLETE
+                    data: json.DEFECT_NO
                 }],
                  credits: {
                     enabled: false
