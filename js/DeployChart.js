@@ -38,7 +38,7 @@ function DeployChart(SQUAD_ID){
             },
             title: {
                 x:15,
-                text: 'Deployment Duration',
+                text: 'DEPLOYMENT DURATION',
                 margin:50   
             },
             subtitle: {
@@ -50,7 +50,7 @@ function DeployChart(SQUAD_ID){
                 min:null,
                 categories: json.date,
                 title: {
-                    text: 'Date',
+                    text: 'DATE',
                     margin:10
                 }
             },
@@ -68,7 +68,7 @@ function DeployChart(SQUAD_ID){
                         textShadow: '0 0 0px contrast'   
                     },
                     x:3,
-                    y:-50,
+                    y:-40,
                     rotation: -90,
                     formatter: function () {
                         var digits=[];
@@ -76,15 +76,15 @@ function DeployChart(SQUAD_ID){
                         var num=this.total;
                         digits = (""+num).split(".");
                         if(digits[0]==0&&digits.length>1){
-                                output=digits[1]+" MINUTEs";
+                                output=digits[1]+" MIN";
 
                         }
                         if(digits[0]!=0&&digits.length>1){
-                                output=digits[0]+" hours  "+digits[1]+" MINUTEs";
+                                output=digits[0]+" HR  "+digits[1]+" MIN";
 
                         }
                         if(digits[0]!=0&&digits.length==1){
-                         output=this.total+" hours"; 
+                         output=this.total+" HR"; 
                         }
                         return  output;       
                     } 

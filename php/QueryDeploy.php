@@ -14,6 +14,7 @@ $ans = array();// Keep All Data
 
 
 
+
 	$sql1 = "SELECT DATE_FORMAT(a.DeploymentDate, '%d %M') AS dateformat,date(a.DeploymentDate) AS dateloop
 			from TEST_DEPLOYMENT a , buildresult b , mapindexparent c ,
 			projectindex d,TEST_PROJECT_PARENT e where a.DeploymentDate > SYSDATE() - INTERVAL 8 DAY 
@@ -87,6 +88,13 @@ $countProj=count($projName)-1;
 			}	
    		}
    		else if($sort[3]==$projName[$i]&&$sort[4]!=$dateLoop[0]){
+   			if($sort[4]!=$dateLoop[$k]){
+   				$hrs[$index]="";
+				$start[$index]="";
+				$end[$index]="";
+				$index++;
+				$k++;
+   			}
    			$hrs[$index]=$sort[2];
 			$start[$index]=$sort[0];
 			$end[$index]=$sort[1];
