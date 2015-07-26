@@ -44,7 +44,6 @@ function valocityChart(SQUAD_ID){
                     shadow: false
                 },
                 tooltip: {
-                    shared : true,
                     formatter: function () {
                         return 'spring : '+ this.x + '<br>' + this.series.name + ' : ' + this.y;
                     }

@@ -20,7 +20,7 @@
 
     $sql2 = "SELECT *
 			 FROM TEST_RETRO_CARD
-			 WHERE SQUAD_ID = ".$_GET['SQUAD_ID']." AND SPRINT_NO = ".$sprintNO;
+			 WHERE CARD_NO BETWEEN 1 AND 4 AND SQUAD_ID = ".$_GET['SQUAD_ID']." AND SPRINT_NO = ".$sprintNO;
 
 
 	$cards = $con->query($sql2);
