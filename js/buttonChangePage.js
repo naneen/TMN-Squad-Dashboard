@@ -9,6 +9,7 @@ function setButtonPage(){
                 var button = document.createElement("div");
                 button.setAttribute("class","pagination__dot" + ((i==0)? " pagination__dot--active":""));
                 button.setAttribute("id","button" + i);
+                button.setAttribute("onclick","setPageRetroClick(this," + i + ")");
                 var pagination = document.getElementsByClassName("pagination");
                 pagination[0].appendChild(button);
             }
@@ -31,4 +32,11 @@ function setPageRetro(){
     pageRetro = runnerButton;
     $(".pagination div").removeClass("pagination__dot--active");
     $("#button" + runnerButton).addClass("pagination__dot--active");
+}
+
+function setPageRetroClick(element,page_number){
+    pageRetro = page_number;
+    runnerButton = page_number;
+    $(".pagination div").removeClass("pagination__dot--active");
+    $(element).addClass("pagination__dot--active");
 }

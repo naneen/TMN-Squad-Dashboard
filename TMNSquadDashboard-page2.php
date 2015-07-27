@@ -40,7 +40,7 @@
             function autoChangeCard(){
                 $.ajax({
                     success: function() {
-                       if(runnerButton==countPage){
+                       if(runnerButton>=countPage){
                             runnerButton = 0;
                         }
                         setPageRetro();
