@@ -1,4 +1,4 @@
-var temp = JSON.stringify({});
+var temp = 0;
 function CoverageChart(SQUAD_ID){
     $.getJSON(
         'php/QueryCoverage.php',{ 'SQUAD_ID' :SQUAD_ID },function(json) {

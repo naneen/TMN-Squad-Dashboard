@@ -13,9 +13,25 @@
         <script src="js/CoverageChart.js"></script>
         <script src="js/defectchart.js"></script>
         <?php include 'php/QuerySquadName.php'; ?>
+        <?php include 'php/QueryCountCard.php'; ?>
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
 
         <script type="text/javascript">
             $SQUAD_ID = <?php echo $_POST['SQUAD_ID']?>;
+            var pageRetro = 0;
+
+            function setButtonPage(){
+                var count = <?php echo $count?>;
+                for(var i = 0;i<Math.ceil(count/4.0);i++){
+                    var button = document.createElement("div");
+                    button.setAttribute("class", "pagination__dot");
+                    button.setAttribute("onclick", "setPageRetro(this,"+i+")");
+                    var pagination = document.getElementsByClassName("pagination");
+                    pagination[0].appendChild(button);
+                }
+            }
+
             function autoRefresh(){
                 $.ajax({
                     success: function() {
@@ -25,23 +41,31 @@
                         }
                         valocityChart($SQUAD_ID);
                         CoverageChart($SQUAD_ID);
-                        retrospective($SQUAD_ID);
+                        retrospective($SQUAD_ID,pageRetro);
                         defectChart($SQUAD_ID);
                   }
                 });
             }
-            setInterval(autoRefresh,1000);
+            setInterval(autoRefresh,100);
 
             window.onload =  function(){
                 $("#year").html(getYear());
-                retrospective($SQUAD_ID);
+                retrospective($SQUAD_ID,pageRetro);
                 valocityChart($SQUAD_ID);
                 DeployChart($SQUAD_ID);
                 CoverageChart($SQUAD_ID);
                 defectChart($SQUAD_ID);
+                setButtonPage();
                 autoRefresh();
             }
-        </script>
+
+            function setPageRetro(element,page_number){
+                alert(page_number);
+              pageRetro = page_number;
+              $(".pagination div").removeClass("pagination__dot--active");
+              $(element).addClass("pagination__dot--active");
+            }
+          </script>
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/SprintDashboard.css">
@@ -88,6 +112,9 @@
 
                     <div id="retroCard"></div>
                 </div>
+                <div class="pagination">
+
+              </div>
             </div>
         </div>
     </body>

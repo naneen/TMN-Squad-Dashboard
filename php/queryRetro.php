@@ -18,10 +18,11 @@
     $retorJson['NEUTRAL'] = (int)$row["NEUTRAL"];
     $retorJson['STRESSFUL'] = (int)$row["STRESSFUL"];
 
-    $sql2 = "SELECT *
-			 FROM TEST_RETRO_CARD
-			 WHERE CARD_NO BETWEEN 1 AND 4 AND SQUAD_ID = ".$_GET['SQUAD_ID']." AND SPRINT_NO = ".$sprintNO;
-
+     $sql2 = "SELECT *
+            FROM TEST_RETRO_CARD
+            WHERE SQUAD_ID = ".$_GET['SQUAD_ID']." AND SPRINT_NO = ".$sprintNO."
+            ORDER BY SPRINT_NO
+            LIMIT ".($_GET['pageRetro']*4).",4";
 
 	$cards = $con->query($sql2);
 
@@ -39,6 +40,12 @@
     $retorJson['ACTION_ITEM'] = $actions;
     $retorJson['OWNER'] = $owner;
 
+     $sql3 = "SELECT count(*) as COUNT
+             FROM TEST_RETRO_CARD
+             WHERE SQUAD_ID = ".$_GET['SQUAD_ID']." AND SPRINT_NO = ".$sprintNO;
 
+    $counts = $con->query($sql3);
+    $row = $counts->fetch_assoc();
+    $retorJson['COUNT'] = (int)$row['COUNT'];
     echo json_encode($retorJson);
 ?>

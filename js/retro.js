@@ -11,7 +11,6 @@ function setImage(imgName, num, id){
 
 function setRetroCard(panel_array, action_array, owner_array){
 	for (var i = 0; i < panel_array.length; i++) {
-		$("#card"+(i+1)).remove();
 		var card = document.createElement("div");
 		card.setAttribute("class", "panel panel-default");
 		card.setAttribute("id", "card"+(i+1));
@@ -55,11 +54,32 @@ function setRetroCard(panel_array, action_array, owner_array){
 	}
 }
 
-function retrospective(SQUAD_ID){
+function resetCard(){
+	for(var i = 0;i<4;i++){
+		$("#card"+(i+1)).remove();
+	}
+}
+
+function resetImage(id,text_topic){
+	var list = document.getElementById(id);
+    while (list.hasChildNodes()) {
+        list.removeChild(list.firstChild);
+    }
+    var node = document.createElement("P");
+    var textnode = document.createTextNode(text_topic);
+    node.appendChild(textnode);
+    list.appendChild(node);
+}
+
+function retrospective(SQUAD_ID,pageRetro){
     $.getJSON(
-        'php/queryRetro.php',{'SQUAD_ID':SQUAD_ID},function(json) {
+        'php/queryRetro.php',{'SQUAD_ID':SQUAD_ID,'pageRetro':pageRetro},function(json) {
             if(json_old3 != JSON.stringify(json)){
                 json_old3 = JSON.stringify(json);
+                resetCard();
+                resetImage("positive","Positive");
+                resetImage("neutral","Neutral");
+                resetImage("stressful","Stressful");
 				setImage("icon4", json.POSITIVE, "positive");
 				setImage("icon4", json.NEUTRAL, "neutral");
 				setImage("icon4", json.STRESSFUL, "stressful");
