@@ -20,12 +20,13 @@
         <script type="text/javascript">
             $SQUAD_ID = <?php echo $_POST['SQUAD_ID']?>;
             var pageRetro = 0;
-
+            var countPage = 1;
             function setButtonPage(){
                 var count = <?php echo $count?>;
-                for(var i = 0;i<Math.ceil(count/4.0);i++){
+                countPage = Math.ceil(count/4.0);
+                for(var i = 0;i<countPage;i++){
                     var button = document.createElement("div");
-                    button.setAttribute("class", "pagination__dot");
+                    button.setAttribute("class","pagination__dot" + ((i==0)? " pagination__dot--active":""));
                     button.setAttribute("onclick", "setPageRetro(this,"+i+")");
                     var pagination = document.getElementsByClassName("pagination");
                     pagination[0].appendChild(button);
@@ -38,11 +39,28 @@
                         if(getCorrectTime() == "00:00:00"){
                             $("#year").html(getYear());
                             DeployChart($SQUAD_ID);
+                            CoverageChart($SQUAD_ID);
                         }
                         valocityChart($SQUAD_ID);
-                        CoverageChart($SQUAD_ID);
+                        // CoverageChart($SQUAD_ID);
                         retrospective($SQUAD_ID,pageRetro);
                         defectChart($SQUAD_ID);
+                        // var xxx = Math.ceil(<?php
+                        // include 'php/QueryCountCard.php';
+                        //  echo $count;
+                        //  ?>/4.0);
+                        // alert(xxx);
+                        // if(countPage < xxx){
+                        //     alert("AAA");
+                        //     for(var i = countPage;i<xxx;i++){
+                        //         var button = document.createElement("div");
+                        //         button.setAttribute("class","pagination__dot" + ((i==0)? " pagination__dot--active":""));
+                        //         button.setAttribute("onclick", "setPageRetro(this,"+i+")");
+                        //         var pagination = document.getElementsByClassName("pagination");
+                        //         pagination[0].appendChild(button);
+                        //     }
+                        //     countPage = xxx;
+                        // }
                   }
                 });
             }
@@ -60,7 +78,7 @@
             }
 
             function setPageRetro(element,page_number){
-                alert(page_number);
+                // alert(page_number);
               pageRetro = page_number;
               $(".pagination div").removeClass("pagination__dot--active");
               $(element).addClass("pagination__dot--active");
