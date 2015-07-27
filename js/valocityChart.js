@@ -45,7 +45,7 @@ function valocityChart(SQUAD_ID){
                 },
                 tooltip: {
                     formatter: function () {
-                        return 'spring : '+ this.x + '<br>' + this.series.name + ' : ' + this.y;
+                        return 'sprint : '+ this.x + '<br>' + this.series.name + ' : ' + this.y;
                     }
                 },
                 plotOptions: {
