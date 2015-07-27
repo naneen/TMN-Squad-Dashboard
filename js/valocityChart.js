@@ -10,7 +10,7 @@ function valocityChart(SQUAD_ID){
                     type: 'column'
                 },
                 title: {
-                    text: 'Sprint Dashboard<br>Valocity commit / complete'
+                    text: 'Sprint Dashboard<br>Velocity commit / complete'
                 },
                 xAxis: {
                     title:{

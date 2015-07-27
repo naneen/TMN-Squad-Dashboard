@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"set",
+				"setButtonPage"
+			],
+			[
+				"retro",
+				"retorJson"
+			],
+			[
+				"reet",
+				"resetImage"
+			],
+			[
+				"pa",
+				"page_number"
+			],
+			[
+				"page",
+				"pageRetro"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"re",
+				"remove	.remove()"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
 				"hea",
 				"headOwner"
 			],
@@ -106,10 +142,6 @@
 			[
 				"vol",
 				"volocityChart"
-			],
-			[
-				"va",
-				"value	Attr"
 			],
 			[
 				"me",
@@ -244,11 +276,19 @@
 	"buffers":
 	[
 		{
-			"file": "TMNSquadDashboard-page1.php",
+			"file": "/Applications/MAMP/htdocs/builddashboard/dbconnect.php",
 			"settings":
 			{
-				"buffer_size": 1556,
-				"line_ending": "Unix"
+				"buffer_size": 86,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/builddashboard/content.php",
+			"settings":
+			{
+				"buffer_size": 1697,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -318,19 +358,41 @@
 	"expanded_folders":
 	[
 		"/Applications/MAMP/htdocs",
-		"/Applications/MAMP/htdocs/Archive"
+		"/Applications/MAMP/htdocs/builddashboard",
+		"/Applications/MAMP/htdocs/builddashboard/coveragereport"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/ProjectSquad/php/queryRetro.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/js/retro.js",
+		"/Applications/MAMP/htdocs/ProjectSquad/TMNSquadDashboard-page2.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/TMNSquadDashboard-page1.php",
+		"/Applications/MAMP/htdocs/tooltip-pagination/index.html",
+		"/Applications/MAMP/htdocs/ProjectSquad/css/style.css",
+		"/Applications/MAMP/htdocs/ProjectSquad/css/SprintDashboard.css",
+		"/Applications/MAMP/htdocs/tooltip-pagination/css/style.css",
+		"/Applications/MAMP/htdocs/tooltip-pagination/scss/style.scss",
+		"/Applications/MAMP/htdocs/ProjectSquad/index.sublime-project",
+		"/Applications/MAMP/htdocs/tooltip-pagination/css/reset.css",
+		"/Users/James/Downloads/tooltip-pagination/index.html",
+		"/Applications/MAMP/htdocs/test/page2.html",
+		"/Applications/MAMP/htdocs/test/page1.html",
+		"/Users/James/Downloads/tooltip-pagination/css/style.css",
+		"/Applications/MAMP/htdocs/test/index.sublime-project",
+		"/Applications/MAMP/htdocs/test/test3.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/connectDB.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/test.php",
+		"/Applications/MAMP/htdocs/ProjectSquad/php/QueryCoverage.php",
+		"/Applications/MAMP/htdocs/projectEX/views/testanalystdashboard-ajax/dbconnect.php",
+		"/Applications/MAMP/htdocs/projectEX/views/sexydashboard-ajax/dbconnect.php",
+		"/Applications/MAMP/htdocs/projectEX/core/conf/application.ini",
+		"/Applications/MAMP/htdocs/projectEX/core/util/dbconnect.php",
 		"/Applications/MAMP/htdocs/Archive/index.sublime-project",
 		"/Applications/MAMP/htdocs/Archive/TMNSquadDashboard-page2.php",
 		"/Applications/MAMP/htdocs/ProjectSquad/css/defectstyle.css",
 		"/Applications/MAMP/htdocs/ProjectSquad/js/volocityChart.js",
 		"/Applications/MAMP/htdocs/ProjectSquad/css/sprint-dashboard.css",
 		"/Applications/MAMP/htdocs/ProjectSquad/js/jquery-redirect.js",
-		"/Applications/MAMP/htdocs/ProjectSquad/TMNSquadDashboard-page2.php",
-		"/Applications/MAMP/htdocs/ProjectSquad/index.sublime-project",
-		"/Applications/MAMP/htdocs/ProjectSquad/TMNSquadDashboard-page1.php",
 		"/Applications/MAMP/htdocs/Integrate/Archive/css/defectstyle.css",
 		"/Applications/MAMP/htdocs/Integrate/Archive/css/SprintDashboard.css",
 		"/Applications/MAMP/htdocs/Integrate/Archive/css/sprint-dashboard.css",
@@ -399,16 +461,9 @@
 		"/Applications/MAMP/htdocs/projectEX/views/TMNSquadDashboard/php/connectDB.php",
 		"/Applications/MAMP/htdocs/ProjectSquad/page1.php",
 		"/Applications/MAMP/htdocs/projectEX/core/util/test.php",
-		"/Applications/MAMP/htdocs/ProjectSquad/php/connectDB.php",
 		"/Applications/MAMP/htdocs/projectEX/views/page1.php",
-		"/Applications/MAMP/htdocs/projectEX/core/util/dbconnect.php",
-		"/Applications/MAMP/htdocs/projectEX/core/conf/application.ini",
 		"/Applications/MAMP/htdocs/ProjectSquad/page2.php",
-		"/Applications/MAMP/htdocs/ProjectSquad/css/style.css",
 		"/Applications/MAMP/htdocs/test/test.php.js",
-		"/Applications/MAMP/htdocs/test/page1.html",
-		"/Applications/MAMP/htdocs/test/page2.html",
-		"/Applications/MAMP/htdocs/test/index.sublime-project",
 		"/Applications/MAMP/htdocs/test/page2.php",
 		"/Applications/MAMP/htdocs/test/page1.php",
 		"/Applications/MAMP/htdocs/test/test.sublime-project",
@@ -426,8 +481,6 @@
 		"/Applications/MAMP/htdocs/ProjectSquad/php/getCorrectTime.php",
 		"/Applications/MAMP/htdocs/ExampleAjax/echo_param.php",
 		"/Applications/MAMP/htdocs/ExampleAjax/ajax.js",
-		"/Applications/MAMP/htdocs/projectEX/views/testanalystdashboard-ajax/dbconnect.php",
-		"/Applications/MAMP/htdocs/projectEX/views/sexydashboard-ajax/dbconnect.php",
 		"/Applications/MAMP/htdocs/ExampleJson/index.php",
 		"/Applications/MAMP/htdocs/ExampleJson/jsonjson.js",
 		"/Applications/MAMP/htdocs/ExampleJson/echo_json.php",
@@ -437,23 +490,11 @@
 		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/dbconnect.php",
 		"/Applications/MAMP/htdocs/qualityreport/core/util/PropertiesConfig.php",
 		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard-ajax/deploy.php",
-		"/Applications/MAMP/htdocs/qualityreport/core/conf/application.ini",
-		"/Applications/MAMP/htdocs/qualityreport/core/dao/james.php",
-		"/Applications/MAMP/htdocs/qualityreport/core/dao/ReportDao.php",
-		"/Applications/MAMP/htdocs/qualityreport/core/dao/DeploymentResultDao.php",
-		"/Applications/MAMP/htdocs/qualityreport/core/util/dbconnect.php",
-		"/Applications/MAMP/htdocs/qualityreport/core/util/james.php",
-		"/Applications/MAMP/htdocs/qualityreport/views/james.php",
-		"/Applications/MAMP/htdocs/qualityreport/views/sexydashboard.php",
-		"/Users/James/Desktop/test.php",
-		"/Applications/MAMP/htdocs/gitRepo/qualityreport/core/conf/application.ini",
-		"/Applications/MAMP/htdocs/DashboardEX/core/util/PropertiesConfig.php",
-		"/Applications/MAMP/htdocs/DashboardEX/core/util/dbconnect.php",
-		"/Applications/MAMP/htdocs/DashboardEX/core/conf/application.ini"
+		"/Applications/MAMP/htdocs/qualityreport/core/conf/application.ini"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -467,6 +508,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"retro",
+			"wall",
+			"retro",
+			"wall",
+			"re",
+			"panel",
 			"defect",
 			"font",
 			"plot",
@@ -519,24 +566,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "TMNSquadDashboard-page1.php",
+					"file": "/Applications/MAMP/htdocs/builddashboard/dbconnect.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1556,
+						"buffer_size": 86,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								86,
+								86
 							]
 						],
 						"settings":
@@ -544,6 +591,103 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Applications/MAMP/htdocs/builddashboard/content.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -559,53 +703,42 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_square_content"
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 456.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -694,6 +827,10 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
