@@ -13,10 +13,7 @@ function setButtonPage(){
                 var pagination = document.getElementsByClassName("pagination");
                 pagination[0].appendChild(button);
             }
-            if(countPage < countPageUpdate){
-                countPage = countPageUpdate;
-            }
-            else if(countPage > countPageUpdate){
+            if(countPage > countPageUpdate){
                 for(var i = countPage;i>countPageUpdate;i--){
                     $("#button"+(i-1)).remove();
                 }
@@ -24,6 +21,7 @@ function setButtonPage(){
                 runnerButton = 0;
                 setPageRetro();
             }
+            countPage = countPageUpdate;
         }
     );
 }
