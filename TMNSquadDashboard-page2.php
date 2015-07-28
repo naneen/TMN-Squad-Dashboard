@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
         <script src="js/jquery.min.map"></script>
         <script src="js/highcharts.js"></script>
         <script src="js/exporting.js"></script>
@@ -35,7 +36,7 @@
                   }
                 });
             }
-            setInterval(autoRefresh,100);
+            setInterval(autoRefresh,1000);
 
             function autoChangeCard(){
                 $.ajax({
