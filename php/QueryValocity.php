@@ -13,7 +13,6 @@
 	$userJson1 = array();
 	$userJson2 = array();
 	$userJson3 = array();
-	$userJson4 = array();
 	$ans = array();
     while($row = $result->fetch_assoc()) {
 	    array_push($userJson1, (int)$row["SPRINT_NO"]);

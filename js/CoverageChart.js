@@ -1,65 +1,83 @@
-var temp = 0;
+var json_old_cover = 0;
 function CoverageChart(SQUAD_ID){
     $.getJSON(
-        'php/QueryCoverage.php',{ 'SQUAD_ID' :SQUAD_ID },function(json) {
-            if(temp!=JSON.stringify(json)){
-                temp = JSON.stringify(json);
+        'php/QueryCoverage.php',{'SQUAD_ID':SQUAD_ID},function(json) {
+            if(json_old_cover != JSON.stringify(json)){
+                json_old_cover = JSON.stringify(json);
                 $('#coverage').highcharts({
-                    chart: {
-                        type: 'column'
+                colors: ['#19B5FE'],
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Percentage Test Coverage'
+                },
+                xAxis: {
+                    title:{
+                        text: 'PROJECT NAME'
                     },
+                    categories: json.ProjectName
+                },
+                yAxis: {
+                    min: 0,
+                    max: 100,
                     title: {
-                        text: 'Percentage Test Coverage'
+                        text: 'TEST COVERAGE (%)'
                     },
-                    xAxis: {
-                        categories: json[0],
-                        title: {
-                            text: 'PROJECT NAME'
+                    stackLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'bold',
+                            color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
                         }
-                    },
-                    yAxis: {
-                        min: 0,
-                        title: {
-                            text: 'TEST COVERAGE (%)'
-                        }
-                    },
-                    tooltip: {
-                        shared: true,
-                        formatter: function () {
-                            return this.x + '<br>' + this.y + '%';
-                        }
-                    },
-                    legend: {
-                        enabled:false
-                    },
-                    plotOptions: {
-                        column: {
-                            pointPadding: 0.2,
-                            borderWidth: 0,
-                            dataLabels: {
-                                allowOverlap: true,
-                                enabled: true,
-                                formatter: function () {
-                                    return this.y + '%';
-                                }
+                    }
+                },
+                legend: {
+                    enabled:true,
+                    align: 'right',
+                    x: 0,
+                    verticalAlign: 'top',
+                    y: 45,
+                    floating: true,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                    borderColor: '#CCC',
+                    borderWidth: 1,
+                    shadow: false
+                },
+                tooltip: {
+                    formatter: function () {
+                        return this.x + '<br>' + this.y + '%';
+                    }
+                },
+                legend: {
+                    enabled:false
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: {
+                            allowOverlap: true,
+                            enabled: true,
+                           formatter: function () {
+                                return this.y + '%';
                             }
-                        },
-                        series:{
-                            color:'#19B5FE'
                         }
-                    },
-                     credits: {
-                         enabled: false
-                    },
-                    exporting: {
-                         enabled :false
-                    },
-                    series: [{
-                        name: json[2],
-                        data: json[1]
-                    }]
-                });
-            }
-        }
-    );
+                    }
+                },
+                series: [{
+                    data: json.PERCENT
+                }],
+                 credits: {
+                    enabled: false
+                },
+                exporting: {
+                    buttons: [
+                        {
+                            enabled: false,
+                            symbol: false
+                        }
+                    ]
+                }});
+          }
+          }
+          );
 }

@@ -22,32 +22,32 @@
             $SQUAD_ID = <?php echo $_POST['SQUAD_ID']?>;
 
             function autoRefresh(){
-                $.ajax({
-                    success: function() {
+                // $.ajax({
+                    // success: function() {
                         if(getCorrectTime() == "00:00:00"){
                             $("#year").html(getYear());
                             DeployChart($SQUAD_ID);
-                            CoverageChart($SQUAD_ID);
                         }
+                        CoverageChart($SQUAD_ID);
                         valocityChart($SQUAD_ID);
                         retrospective($SQUAD_ID,pageRetro);
                         defectChart($SQUAD_ID);
                         setButtonPage();
-                  }
-                });
+                  // }
+                // });
             }
             setInterval(autoRefresh,1000);
 
             function autoChangeCard(){
-                $.ajax({
-                    success: function() {
+                // $.ajax({
+                    // success: function() {
                        if(runnerButton>=countPage){
                             runnerButton = 0;
                         }
                         setPageRetro();
                         runnerButton++;
-                  }
-                });
+                  // }
+                // });
             }
             setInterval(autoChangeCard,5000);
 
